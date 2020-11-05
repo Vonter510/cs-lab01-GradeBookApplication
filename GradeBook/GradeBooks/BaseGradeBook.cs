@@ -9,7 +9,7 @@ using Newtonsoft.Json.Linq;
 
 namespace GradeBook.GradeBooks
 {
-    public class BaseGradeBook
+    public abstract class BaseGradeBook
     {
         private bool isWeighted;
 
@@ -17,6 +17,7 @@ namespace GradeBook.GradeBooks
         public List<Student> Students { get; set; }
 
         public GradeBookType Type { get; set; }
+        public bool IsWeighted { get; set; }
 
         public BaseGradeBook(string name)
         {
