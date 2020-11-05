@@ -1,6 +1,7 @@
 ﻿using System;
 using GradeBook.UserInterfaces;
 
+
 namespace GradeBook
 {
     class Program
@@ -16,6 +17,6 @@ namespace GradeBook
             Console.WriteLine("Thank you for using GradeBook!");
             Console.WriteLine("Have a nice day!");
             Console.Read();
-        }
+    }
     }
 }

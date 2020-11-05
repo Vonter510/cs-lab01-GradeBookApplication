@@ -11,13 +11,22 @@ namespace GradeBook.GradeBooks
 {
     public class BaseGradeBook
     {
+        private bool isWeighted;
+
         public string Name { get; set; }
         public List<Student> Students { get; set; }
+
+        public GradeBookType Type { get; set; }
 
         public BaseGradeBook(string name)
         {
             Name = name;
             Students = new List<Student>();
+        }
+
+        public BaseGradeBook(string name, bool isWeighted) : this(name)
+        {
+            this.isWeighted = isWeighted;
         }
 
         public void AddStudent(Student student)
